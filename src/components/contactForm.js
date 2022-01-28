@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function contact() {
-    return (
+function ContactForm() {
+  return(
         <div className='container'>
             <p>Want to Get into contact with me? Fill in the form below and I will get back to you as soon as possible!</p>
             
@@ -14,6 +14,8 @@ export default function contact() {
                 <button className='button' onClick={''}>Send</button>
             </div>
 
-        </div>
-    )
+        </div>) 
+
 }
+
+export default ContactForm;

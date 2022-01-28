@@ -1,12 +1,9 @@
-import React from 'react'
-import frog from './pictures/FeelsGoodMan.png';
+import React from 'react';
 import { useState } from 'react';
 
+function Information() {
 
-
-export default function About() {
-
-    const [info,setInfo] = useState (
+     const [info,setInfo] = useState (
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Arcu risus quis varius quam quisque id. Pellentesque massa placerat duis ultricies. Mauris in aliquam sem fringilla ut.
@@ -70,57 +67,21 @@ export default function About() {
 
             );
         }
-                  
 
-    return (
-        <>
 
-        <div className='grid-container'>
-
-        <div className='leftSide'>
-            <div className='profile'>
-                <img src={frog} alt='yeet'/>
-            </div>
-            <div className='profileLinks'>
-                <img src='' alt='gitHub'/>
-                <img src='' alt='LinkedIn'/>
-                <img src='' alt='Twitter'/>
-            </div>
-            <div className='info'>
-                <div className='languages'>
-                    <h4>Languages</h4>
-                    <p>Swedish</p>
-                    <p>English</p>
-                </div>
-                <div className='programingLanguage'>
-                    <h4>Programing Languages</h4>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JAVASCRIPT</p>
-                    <p>REACT.JS</p>
-                </div>
-                <div className='other'>
-                    <h4>Other Interests</h4>
-                    <p>Gaming</p>
-                    <p>Sports/Motorsports</p>
-                    <p>Music</p>
-                    <p>Food</p>
-                </div>
-            </div>
-        </div>
-
+  return (
+      <>
         <div className='rightSide'>
             <div className='infoNav'>
                 <button className='btn' onClick={aboutClick}>About Me</button>
                 <button className='btn' onClick={cvClick}>CV</button>
                 <div className='infoTxt'>
-                    {info}
-                          
+                    {info}  
                 </div>
             </div>
         </div>
-
-        </div>
-                    </>
-    )
+      </>
+  )
 }
+
+export default Information;

@@ -1,15 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import frog from './pictures/FeelsGoodMan.png';
-import example from './pictures/website.png'
-
-
-
-
-function Works() {
-    
-    const [searchInput,setSearchInput] = useState('LukasLindqvist')
+import example from '../components/pictures/website.png'
+function RepoFeed() {
+        const [searchInput,setSearchInput] = useState('LukasLindqvist')
     
     const handleChange = (e) =>{
         setSearchInput(e.target.value)
@@ -37,17 +31,17 @@ function Works() {
         handleClick();
     },[]);
     
-    return <div>
+    return (
+      <>
+      <div>
       <input type='text' className='repoName' value={searchInput} onChange={handleChange}></input>
     <div className='repo-container'>
       <h2>Here are some of my previous projects</h2>
         {listRepos}
     </div>
-  </div>;
+    </div>;
+      </>
+      )
 }
 
-
-
-
-
-export default Works;
+export default RepoFeed;
