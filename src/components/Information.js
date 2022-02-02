@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
+// useState for about/CV on about page
+
 function Information() {
 
      const [info,setInfo] = useState (
@@ -58,7 +60,7 @@ function Information() {
                     <div className='education'>
                         <h2>Education</h2>
                         <h4>Front End Developer @ KYH</h4>
-                        <h6>august 2021-august 2023</h6>
+                        <h6>september 2021-sometime 2023</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Arcu risus quis varius quam quisque id. Pellentesque massa placerat duis ultricies. Mauris in aliquam sem fringilla ut.</p>
                     </div>

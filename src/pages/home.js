@@ -1,12 +1,10 @@
 import React from 'react'
-import frog from '../components/pictures/FeelsGoodMan.png';
+import me from  '../components/pictures/profile.JPG'
 function home() {
     return (
         <>
-        <div className='hideNavbar'>
-        </div>
         <div className='homePage'>
-            <img src= {frog} alt='yes'/>
+            <img src= {me} alt='yes'/>
             <h1>Hi I'm Lukas Lindqvist</h1>
         </div>
         </>

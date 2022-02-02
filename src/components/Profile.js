@@ -1,19 +1,27 @@
-import React from 'react';
-import frog from '../components/pictures/FeelsGoodMan.png';
+import React from 'react'
+import profile from '../components/pictures/profile2.JPG'
 import github from '../components/pictures/GitHub-Logo.png';
 import linkedin from '../components/pictures/linkedin.png';
 import twitter from '../components/pictures/twitter.png';
+
+//output for leftside of about page
 function Profile() {
   return (
       <>
         <div className='leftSide'>
             <div className='profile'>
-                <img src={frog} alt='yeet'/>
+                <img src={profile} alt='yeet'/>
             </div>
             <div className='profileLinks'>
-                <img src={github} alt='gitHub' id='github'/>
-                <img src={linkedin} alt='LinkedIn' id='linkedin' />
-                <img src={twitter} alt='Twitter' id='twitter'/>
+                <a href='https://github.com/LukasLindqvist' target='_blank'>
+                    <img src={github} alt='gitHub' id='github'/>
+                </a>
+                <a href='https://se.linkedin.com/' target='_blank'> 
+                    <img src={linkedin} alt='LinkedIn' id='linkedin' />
+                </a>
+                <a href='https://twitter.com/syltencs' target='_blank'>
+                    <img src={twitter} alt='Twitter' id='twitter'/>
+                </a>
             </div>
             <div className='info'>
                 <div className='languages'>

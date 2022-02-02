@@ -9,7 +9,6 @@ body {
   width: 100%;
   height: 100px;
   display: flex;
-  text-align: center;
 }
 
 nav ul {
@@ -27,7 +26,6 @@ nav li {
   font-size: 20px;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
@@ -39,7 +37,6 @@ nav a {
   text-decoration: none;
   color: white;
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
@@ -98,7 +95,10 @@ nav li:hover {
 }
 
 .homePage img {
+  margin-top: 50px;
   border-radius: 50%;
+  height: 400px;
+  width: 400px;
 }
 
 /* Home page CSS END */
@@ -135,11 +135,14 @@ nav li:hover {
 .profileLinks img {
   height: 49px;
   width: auto;
-  filter: grayscale(70%);
+  filter: grayscale(40%);
 }
 
 .profileLinks img:hover {
   filter: grayscale(0);
+}
+#github:hover {
+  filter: invert();
 }
 
 #linkedin {
@@ -170,6 +173,10 @@ nav li:hover {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: #ffc11e;
+}
+
 /* CV display css */
 
 .cv-container {
@@ -196,6 +203,7 @@ nav li:hover {
 .cv-container p {
   font-size: 1vw;
 }
+/* About page css end */
 
 /* Show repos css */
 
@@ -214,6 +222,7 @@ nav li:hover {
 
 .repo p {
   font-size: 1.5vw;
+  text-decoration: underline 2px #ffc11e;
 }
 
 .repo a {
@@ -224,4 +233,62 @@ nav li:hover {
 .repo img {
   height: 300px;
   width: auto;
+}
+
+/* contact page css */
+
+.contact-page {
+  width: 100%;
+  height: 100vh;
+}
+
+#contact-header {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form h4 {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.field {
+  width: 500px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  transition: 0.3s;
+  border: none;
+}
+
+.button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  background-color: #ffc11e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #977419;
 }
