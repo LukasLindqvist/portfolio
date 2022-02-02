@@ -2,25 +2,12 @@ import React, {useRef} from  'react';
 import emailjs from 'emailjs-com';
 
 
-
-// Checking if all fields are filled
-
-/* function validator(){
-    let nameInput = document.getElementById('name').value
-    let emailInput = document.getElementById('email').value
-    let subjectInput = document.getElementById('subject').value
-    let msgInput = document.getElementById('msg').value
-
-    if (nameInput === '' || emailInput === ''|| subjectInput === '' || msgInput === '') {
-        alert('fill all the fields')
-    }
-} */
-
 function ContactForm() {
     
     const form = useRef();
     const validator = (e) =>{
 
+    //Checking if all fields are filled
     let nameInput = document.getElementById('name').value
     let emailInput = document.getElementById('email').value
     let subjectInput = document.getElementById('subject').value
